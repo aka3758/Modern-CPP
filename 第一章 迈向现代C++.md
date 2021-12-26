@@ -4,7 +4,7 @@
 
 弃用并不是彻底不能用，而是这些特性即将从未来的标准中消失，应该尽量避免使用。弃用的特性处于兼容性的考虑，依然是标准库的一部分(这里是C++的原则，一直向前兼容，我感觉有点偶像包袱了)。
 
-1.不再允许字符串字面值常量赋值给一个 char * 。如果需要用字符串字面值常量复制和初始化一个 char *，应该使用const char * 或者 auto 。(这里挺关键的)
+1.不再允许字符串字面值常量赋值给一个 char \* 。如果需要用字符串字面值常量复制和初始化一个 char \*，应该使用const char * 或者 auto 。(这里挺关键的)
 
 2.C++98一场说明、unexpected_handler、set_unexpected()等相关特性将被弃用，应该使用noexcept。(我是UE4的程序员，这个东西用的比较少，不太了解)
 
@@ -18,7 +18,7 @@
 
 7.C语言风格的类型转换被弃用(就是使用convert_type)，应该使用static_cast、reinterpret_cast、const_cast来进行类型转换。(早就应该这么做了)
 
-8.最新的C++17标准中弃用了一些C的标准库，比如<ccomplex>、<cstdalign>、<cstdbool>、<ctgmath>。(呃，表示一个没用过)
+8.最新的C++17标准中弃用了一些C的标准库，比如\<ccomplex>、\<cstdalign>、\<cstdbool>、\<ctgmath>。(呃，表示一个没用过)
 
 9.诸如参数绑定(C++11的std::bind和std::function)、export等特性页均被弃用。
 
@@ -36,7 +36,7 @@ C++不是C的一个超集，从一开始就不是。有许多的程序员说C++�
 extern "C"
 {
 #endif
-	int add(int x, int y);
+    int add(int x, int y);
 #ifdef __cplusplus
 }
 #enfif
