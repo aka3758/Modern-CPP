@@ -6,7 +6,7 @@
 
 1.不再允许字符串字面值常量赋值给一个 char \* 。如果需要用字符串字面值常量复制和初始化一个 char \*，应该使用const char * 或者 auto 。(这里挺关键的)
 
-2.C++98一场说明、unexpected_handler、set_unexpected()等相关特性将被弃用，应该使用noexcept。(我是UE4的程序员，这个东西用的比较少，不太了解)
+2.C++98异常说明、unexpected_handler、set_unexpected()等相关特性将被弃用，应该使用noexcept。(我是UE4的程序员，这个东西用的比较少，不太了解)
 
 3.auto_ptr被弃用，应该使用unique_ptr。(智能指针)
 
